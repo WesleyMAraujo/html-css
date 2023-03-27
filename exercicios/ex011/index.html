@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>tente abrir esse site em varios tamanhos diferentes ou simplesmente aumente  e diminua o tamanho do seu navegador
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/M.png" type="image/png">
+        <img src="imagens/G.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audios em html</p>
+    <audio src="midia/musica.mp3" controls loop></audio> 
+    <!-- controls adiciona o reprodutor com pausa e iniciar, o autoplay inicia a musica assim q o site é iniciado --> 
+    <!-- loop da play novamente na musica assim que ela acabar -->
+    <h1>Outra forma de reproduzir audios</h1>
+    <audio preload="metadata" controls> <!-- preload (metadata) carrega o audio so depois de apertar o play -->
+        <source src="midia/musica.mp3" type="audio/mp3"> <!-- type="audio/formato do arquivo a ser reproduzido" -->
+        <!-- outros exemplos
+        <source src="midia/musica.ogg" type="audio/ogg">
+        <source src="midia/musica.wav" type="audio/wav"> -->
+        
+    </audio>
+    <p><a href="aaaaaa.com.br">catapinbas</a></p>
+    
+</body>
+</html>

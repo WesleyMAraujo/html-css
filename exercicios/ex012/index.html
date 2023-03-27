@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>videos</title>
+</head>
+
+<body>
+    <h1>inserindo videos</h1>
+    <p>hospedado na minha maquina</p>
+    <video src="midia/video.mp4" width="560" controls></video>
+    <!-- controls: controle no video, width: tamanho de exibição no site, autoplay: inicia assim q carregado, loop: faz o video repetir -->
+    <h2> uma outra forma </h2>
+    <p>em modo de compatibilidade com varios formatos para navegadores diferentes</p>
+    <video width="560" controls>
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.mkv" type="video/mkv">
+        <p>seu navegador não tem compatibilidade com o formsto de video</p>
+        <!-- esta forma pode consumir muita banda -->
+    </video>
+    <h2>outra forma</h2>
+    <p>podemos pegar o video de outros locais como youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- indo no video do youtube e em incorportar o youtube ja da o cidigo pronto com o video que vc quer -->
+</body>
+
+</html>
